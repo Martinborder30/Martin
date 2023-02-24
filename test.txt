@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Hei!d
 Undal maen er pedo
+=======
+Hei!s
+>>>>>>> 7a5664cf51213055567836547ce6793760518be3
