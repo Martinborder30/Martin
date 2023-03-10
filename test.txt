@@ -1,6 +1,6 @@
 <<<<<<< HEAD
-Hei!d
+Hei!g
 Undal maen er pedo
 =======
-Hei!s
+Hei!g
 >>>>>>> 7a5664cf51213055567836547ce6793760518be3
