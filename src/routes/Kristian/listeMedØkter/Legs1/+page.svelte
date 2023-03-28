@@ -1,3 +1,7 @@
+<script>
+    import Tilbake from "../tilbake/tilbake.svelte"
+</script>
+
 <body>
 <h1>Legs</h1>
 	<table>
@@ -32,6 +36,8 @@
 		</tbody>
 	</table>
 </body>
+
+<Tilbake/>
 
 <style>
     table{
