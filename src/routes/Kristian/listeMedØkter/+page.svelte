@@ -14,4 +14,4 @@
 
 </ul>
 
-<div><a href="/">Tilbake</a></div>
+<div class="tilbake"><a href="/">Tilbake</a></div>
