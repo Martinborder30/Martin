@@ -1,5 +1,6 @@
 <script>
     import Tilbake from "../tilbake/tilbake.svelte"
+	import Klokke from "../../../Henrik/+page.svelte"
 
 </script>
 
