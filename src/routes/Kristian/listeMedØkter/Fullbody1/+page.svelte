@@ -1,9 +1,12 @@
 <script>
     import Tilbake from "../tilbake/tilbake.svelte"
+	import Klokke from "../../../Henrik/+page..svelte"
 </script>
 
 <body>
 
+<Klokke/>
+	
 <h1>Full body workout</h1>
 	<table>
 		<thead>
