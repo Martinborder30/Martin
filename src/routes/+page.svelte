@@ -1,4 +1,4 @@
-
+<body id="bodyId">
 <!--Link til font-awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,7 +14,7 @@
                 <h1 id="omOssTittel">GymHero</h1>
                 
                 <div id="knapperContainer">
-                    <div class="alleKort"><div class="alleKortIndreDiv">Velg program</div></div>>
+                    <div class="alleKort"><div class="alleKortIndreDiv"><a href="/Kristian/listeMedØkter">Velg program</a></div></div>>
                     <div class="alleKort"><div class="alleKortIndreDiv">Lag program</div></div>
                 </div>
             </div>
@@ -40,6 +40,7 @@
         <p>Last updated on 20 Februar 2022 by Martin Ravndal (High School Tryggheim, B.A. in IT/project. In-IT-house writer at TermsFeed)</p>
     </div>
 </footer>
+</body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
@@ -47,6 +48,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 html {
     height: 100%;
+    margin: 0;
 }
 #bodyId {
     font-family: 'Nunito', sans-serif;
