@@ -14,8 +14,8 @@
                 <h1 id="omOssTittel">GymHero</h1>
                 
                 <div id="knapperContainer">
-                    <div class="alleKort"><div class="alleKortIndreDiv"><a href="/Kristian/listeMedØkter">Velg program</a></div></div>>
-                    <div class="alleKort"><div class="alleKortIndreDiv">Lag program</div></div>
+                    <a href="/Kristian/listeMedØkter"><div class="alleKort"><div class="alleKortIndreDiv">Velg program</div></div></a>
+                    <a href=""><div class="alleKort"><div class="alleKortIndreDiv">Lag program</div></div></a>
                 </div>
             </div>
         </div>
@@ -118,6 +118,9 @@ width: 40%;
     justify-content: space-around;
     margin-top: 50vh;
 }
+a{
+    text-decoration: none;
+}
 
 .alleKort{
         background-color: #2e2e2e;
@@ -126,6 +129,7 @@ width: 40%;
         padding: 0;
         box-shadow: 20px 20px 20px rgba(240, 240, 240, 0.5);
         transition: 0.2s;
+        
     }
     .alleKort:hover{
         box-shadow: 20px 20px 40px rgba(255, 255, 255, 0.8);
