@@ -79,9 +79,15 @@ header h1, h2, h3{
 }
 #framside_hoyreHoyre{
 width: 40%;
+background:url("./Martin/Skjermbilde.png") center;
+    background-size: cover;
+margin: 7vh;
 }
 #framsideVenstre{
     width: 40%;
+background:url("./Martin/Skjermbilde.png") center;
+    background-size: cover;
+margin: 7vh;
 }
 #framside_hoyre{
     width: 100%;
