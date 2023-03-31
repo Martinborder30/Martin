@@ -33,5 +33,8 @@ Legg til øvelse
 
 </ul>
 
+<div class="tilbake"><a href="/">Tilbake</a></div>
+
+
 
 
