@@ -1,54 +1,37 @@
-<p>hei</p>
-
 <script>
- export let person 
- export let høydehopp = 0
- export let lengdehopp = 0
- export let hundremeter = 0
- export let totalscore = høydehopp*5+lengdehopp*5-hundremeter
-export let endreNavn = false
-export let endringsforslag = ""
+	//Importer test filen fra test.svelte
+	import Funksjon from "./funksjon.svelte"
+//Lager et array og kaller det for personer
+//Lager 3 objerkt inni arrayet, og lager ulike verider på de ulike akitviteten
+    let personer = [
+        {navn: "Første øvelse" ,høydehopp: 2, lengdehopp: 2, hundremeter: 10, totalscore: 10},
+       
+    ] 
+//Lager funksjonen som sorterer arrayet etter totalscoren
+//Arrayet får personkopi som nytt navn hver gang det skjer en endring inne i arrayet, endringen blir lagret i en ny"variabel" array med navnetg personkopi.
+//Person.slice tar førse objekte i arrayen
+//Personkopi.sort samanlikner to verdier/inputs, og sender tilbake den som er størst
+$: personerkopi = personer.slice(0);
+$: er = personerkopi.sort(function(a,b) {
+ return a.hundremeter - b.hundremeter;
+ });
 
-
-//Lager funkjson som rekner ut toltapoeng
-// Bruken av Math.abs jør alle negative tal om til positive tal.
-
-const totalpoeng = () => {
-        
-        høydehopp=Math.abs(høydehopp)
-        lengdehopp=Math.abs(lengdehopp)
-        hundremeter=Math.abs(hundremeter)
-        totalscore = høydehopp*5+lengdehopp*5-hundremeter
-    } 
 </script>
-<!-- Funkjsonen som legger til ny elev
-Dette vises når kappen blir trykket på
-Når man trykker på lagre, forsvinner input felter, fordi endrenavn=false-->
-{#if endreNavn}
-<label> Nytt navn: <input type="text" bind:value={endringsforslag}/></label>
-<button 
-on:click={() =>{
-    person = endringsforslag
-    endreNavn = false
-}}>
-lagre
-<!-- Npr man trykk på avbryt, forsvinner det også for endrenavn=false-->
-</button>
-<button on:click={() => (endreNavn = false)}> Avbryt</button>
+<!-- Each personer as person viser frem en og en verdi fra arrayet
+Binner inputfeltene til de ulike objektene-->
+<h1>Registrering av Elever</h1>
+<ul>
+  {#each personer as person}
+    <li><Funksjon bind:person={person.navn} bind:høydehopp={person.høydehopp} bind:lengdehopp={person.lengdehopp} bind:hundremeter={person.hundremeter} bind:totalscore={person.totalscore}/></li>
+  {/each}
+  <!-- Kanppen som legger til personer-->
+  <button on:click={() => {
+    personer=[...personer, {navn: "Ny Øvelse", høydehopp: 0, lengdehopp:0, hundremeter:0,  }]
+  }}>
+Legg til øvelse
+  </button>
 
-<!-- Npr endre navn =true kjem input felte opp-->
-{:else}
-<span>
-    <label>{person} <button on:click={() =>{
-    endringsforslag=person
-    endreNavn=true
-}}>
-<!-- Lager input feltene-->
-Rediger
-    </button> meter høydehopp<input type="number" min=0 bind:value={høydehopp} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)} > </label>
-    <label> meter lengdehopp<input type="number" min=0 bind:value={lengdehopp} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)}></label>
-    <label> sekund på  hundremeter<input type="number" min=0 bind:value={hundremeter} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)} > Du fikk total {totalscore} poeng</label> 
+</ul>
 
-</span>
 
-{/if} 
+
