@@ -40,6 +40,6 @@ body{
     width: 800px;
     background-color: whitesmoke;
     border-radius: 20px;
-    margin: ;
+    margin: 0;
 }
 </style>
