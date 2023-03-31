@@ -75,8 +75,6 @@
     onDestroy(() => {
         terminate();
     });
-	let src = '/tutorial/image.gif';
-	let name = 'Rick Astley';
 </script>
 <style>
 	/* global styles which would otherwise be placed in the global stylesheet */
@@ -155,8 +153,7 @@
     pass the necessary booleans to display the correct button(s)
     -->
 	<Controls on:start={start} on:stop={stop} on:pause={pause} on:lap={lap} {subscription} {lapsed} />
+	
+
 </div>
 
-
-<!-- {src} is short for src={src} -->
-<img {src} alt="{name} dancing">
