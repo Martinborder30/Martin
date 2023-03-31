@@ -15,7 +15,7 @@
                 
                 <div id="knapperContainer">
                     <a href="/Kristian/listeMedØkter"><div class="alleKort"><div class="alleKortIndreDiv">Velg program</div></div></a>
-                    <a href=""><div class="alleKort"><div class="alleKortIndreDiv">Lag program</div></div></a>
+                    <a href="/Fillip"><div class="alleKort"><div class="alleKortIndreDiv">Lag program</div></div></a>
                 </div>
             </div>
         </div>
