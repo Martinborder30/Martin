@@ -1,4 +1,11 @@
+<script>
+    import Tilbake from "../tilbake/tilbake.svelte"
+
+
+</script>
+
 <body>
+
 <h1>Full body workout</h1>
 	<table>
 		<thead>
@@ -37,6 +44,8 @@
 		</tbody>
 	</table>
 </body>
+
+<Tilbake/>
 
 <style>
     table{
