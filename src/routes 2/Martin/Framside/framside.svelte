@@ -1,4 +1,7 @@
-<body id="bodyId">
+<script>
+    //Importerer css'es frå ein css fil
+
+</script>
 <!--Link til font-awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -6,20 +9,26 @@
 <!-----------------------------------------------------Framside------------------------------------------------>
 <div id="framside-main">
     <div id="framside-hoved">
-        
-        <div id="framsideVenstre"></div>
+        <div id="framside-venstre">
+            <img src="https://i.pinimg.com/originals/bd/82/0c/bd820cc1ca5a93760b9780d2910744fd.jpg" alt="logo" id="logoId">
+        </div>
         <div id="framside_hoyre">
             <!--Navigasjonbar-->
-            <div id="omOssContainer">
-                <h1 id="omOssTittel">GymHero</h1>
-                
-                <div id="knapperContainer">
-                    <a href="/Kristian/listeMedØkter"><div class="alleKort"><div class="alleKortIndreDiv">Velg program</div></div></a>
-                    <a href="/Fillip"><div class="alleKort"><div class="alleKortIndreDiv">Lag program</div></div></a>
+            <header id="main_navBarId">
+
+                <div id="container_navBarDiv">
+                    <div class="child_navBar"><a class="navBarLink1" href="./vurder_tannlege">Vurder Tannlege</a></div>
+                    <div class="child_navBar"><a class="navBarLink1" href="./bli_medlem">Bli medlem</a></div>
+                    <div class="child_navBar"><a class="navBarLink1" href="./kontakt">Kontakt</a></div>
+                    <div class="child_navBar"><a class="navBarLink1" href="./mer_om_oss">Mer om oss</a></div>
                 </div>
+                <button class="homeButtonId"><a class="navBarLink1" href="./Framside">Home</a></button>
+            </header>
+            <div id="omOssContainer">
+                <h1 id="omOssTittel">Om oss</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida, urna non gravida convallis, sapien justo ultrices velit, vel dictum lorem ligula sed purus. Morbi pharetra convallis consequat. Nullam accumsan pulvinar lacus, et interdum lectus imperdiet sit amet. Sed sagittis ex a dapibus faucibus. Duis lacinia gravida eros nec commodo. Praesent nec nunc sed ipsum euismod rutrum. Maecenas tincidunt accumsan dolor, et semper turpis facilisis nec. </p>
             </div>
         </div>
-        <div id="framside_hoyreHoyre"></div>
     </div>
 </div>
 <!-----------------------------------------------------Footer------------------------------------------------>
@@ -40,7 +49,6 @@
         <p>Last updated on 20 Februar 2022 by Martin Ravndal (High School Tryggheim, B.A. in IT/project. In-IT-house writer at TermsFeed)</p>
     </div>
 </footer>
-</body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
@@ -48,7 +56,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 html {
     height: 100%;
-    margin: 0;
 }
 #bodyId {
     font-family: 'Nunito', sans-serif;
@@ -73,78 +80,90 @@ header h1, h2, h3{
     display: flex;
     flex-direction: row;
     height: 100vh;
-    background:url("https://wallpaperaccess.com/full/674849.jpg") center;
+    background:url("https://www.helsenorge.no/4a1d84/globalassets/bilder/delingsbilder/tannbehandling-fb.png?w=1200&hash=724F121AD3FC3CD123F4A67F8C024A49E9F9168F12DFCC5089C30A4A2CC3A242") center;
     background-size: cover;
     background-attachment: fixed;
 }
-#framside_hoyreHoyre{
-width: 40%;
-}
-#framsideVenstre{
-    width: 40%;
-}
-#framside_hoyre{
-    width: 100%;
+#framside-venstre{
+    width: 50%;
     height: 100%;
-    background: rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-}
+    opacity: 0.7;
+    background: white;
 
-#omOssContainer{
-    color: #dedcdc;
-    width: 100%;
+}
+#logoId{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5vh;
+    width: 40%;
+    padding-top: 150px;
+
+}
+
+#framside_hoyre{
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+#main_navBarId{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.child_navBar{
+    display: inline-block;
+    padding: 5px 2vh;
+    cursor: pointer;
+    color: #dedcdc;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    font-size: 2vh;
+}
+.navBarLink1{
+    text-decoration: none;
+    color: #dedcdc;
+}
+.child_navBar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #b2a25a;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.child_navBar:hover::after{
+    color: #266175;
+    font-size: 30px;
+
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#omOssContainer{
+    color: #dedcdc;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25vh;
     line-height: 3vh;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
-    
 }
 #omOssTittel{
-    font-family: arial black;
-    display: flex;
-    justify-content: center;
-    font-size: 80px;
-    font-weight: bolder;
-    color: rgb(194, 71, 62);
-    
+    font-family: 'Raleway', sans-serif;
 }
-#knapperContainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50vh;
-}
-a{
-    text-decoration: none;
-}
-
-.alleKort{
-        background-color: #2e2e2e;
-        margin: 2vh;
-        border-radius: 1.5vh;
-        padding: 0;
-        box-shadow: 20px 20px 20px rgba(240, 240, 240, 0.5);
-        transition: 0.2s;
-        
-    }
-    .alleKort:hover{
-        box-shadow: 20px 20px 40px rgba(255, 255, 255, 0.8);
-    background: #6d6d6d;
-    }
-    .alleKortIndreDiv {
-        background-color: #d1d1d1;
-        padding: 3vh;
-        margin: 1vh 3vh;
-        border-radius: 1.5vh;
-        color: #161616;
-        font-family: Tahoma;
-        font-size: 2.5vh;
-        margin: 10px 0 0 10px;
-    }
 .homeButtonId{
     padding: 10px 20px;
     background-color: #4b4747;
