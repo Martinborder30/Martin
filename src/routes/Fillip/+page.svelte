@@ -19,7 +19,7 @@ $: er = personerkopi.sort(function(a,b) {
 </script>
 <!-- Each personer as person viser frem en og en verdi fra arrayet
 Binner inputfeltene til de ulike objektene-->
-<h1>Registrering av Elever</h1>
+<h1>Treningsøkt</h1>
 <ul>
   {#each personer as person}
     <li><Funksjon bind:person={person.navn} bind:høydehopp={person.høydehopp} bind:lengdehopp={person.lengdehopp} bind:hundremeter={person.hundremeter} bind:totalscore={person.totalscore}/></li>
@@ -34,6 +34,8 @@ Legg til øvelse
 </ul>
 
 <div class="tilbake"><a href="/">Tilbake</a></div>
+
+
 
 
 
