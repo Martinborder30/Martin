@@ -1,6 +1,6 @@
 <script>
 function vinnIphone() {
-  let antallDivs = Math.floor(Math.random() * 25) + 5;
+  let antallDivs = Math.floor(Math.random() * 25) + 20;
   for (let i = 0; i < antallDivs; i++) {
     setTimeout(() => {
       let nedreDiv = document.createElement("div");
@@ -81,15 +81,6 @@ function fjernReklame() {
   }
   
 }
-
-function removeVinnIphoneDivs() {
-  const divsToRemove = document.querySelectorAll(".nedreDiv");
-  for (let i = 0; i < divsToRemove.length; i++) {
-    divsToRemove[i].remove();
-  }
-  console.log(divsToRemove)
-}
-
 
 </script>
 
