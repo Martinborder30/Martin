@@ -50,7 +50,7 @@
     </div>
 </footer>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');

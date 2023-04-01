@@ -37,7 +37,7 @@
 	</table>
 </body>
 
-<Tilbake/>
+<Tilbake />
 
 <style>
     table{
