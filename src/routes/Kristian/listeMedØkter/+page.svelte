@@ -37,7 +37,7 @@
     },
     {
       tittel: "Plyometric",
-      src: "/Kristian/listeMedØkter/Bilde/august.png",
+      src: "/src/routes/Kristian/listeMedØkter/Bilde/august.png",
       link: "/Kristian/listeMedØkter/Plyometric",
     },
   ];
@@ -46,6 +46,11 @@
   let oppe = treningsdeler.slice(0, midtpunkt);
   let nede = treningsdeler.slice(midtpunkt, treningsdeler.length);
 </script>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 
 <body>
   <div id="hvaSkalTrene"><h1>Velg hva du vil trene</h1></div>
@@ -83,7 +88,29 @@
     </div>
   </div>
 
-  <div class="tilbake"><a href="/">Tilbake</a></div>
+  <a href="/"><div class="tilbake"><i class="fa fa-backward" /></div></a>
+
+  <div id="hvorforTrene">
+    <h1>Hvorfor trene?</h1>
+  </div>
+  <div id="hvorforTreneBilde" />
+  <div id="hvorforTreneTekst">
+    <p>
+      Det er flere gode grunner til å trene regelmessig. For det første kan
+      trening hjelpe deg med å opprettholde en sunn vekt, styrke muskler og
+      bein, og forbedre hjertehelsen. Det kan også øke energinivået ditt,
+      forbedre søvnen din og redusere stressnivået. Trening kan også forbedre
+      humøret ditt og øke selvtilliten din. Å trene kan også bidra til å
+      forebygge en rekke helseproblemer, som diabetes, hjerte- og karsykdommer,
+      og kreft. Det er viktig å finne en treningsform som passer deg og
+      livsstilen din, slik at du kan opprettholde en jevn treningsrutine og nyte
+      alle fordelene som følger med.
+    </p>
+    <a href="/">Les mer her</a>
+  </div>
+  <div id="bilde2">
+
+  </div>
 </body>
 
 <style>
@@ -116,6 +143,9 @@
     background-color: rgba(255, 255, 255, 0.5);
     margin: 100px 0;
     border-radius: 10px;
+    overflow-x: scroll;
+    width: 50%;
+    overflow-y: hidden;
   }
   .bokserHorisontal {
     display: flex;
@@ -123,11 +153,15 @@
   }
   .treningsBoks {
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     width: 35vh;
     height: 35vh;
     border-radius: 2vh;
     border: 3px solid black;
+    transition: 0.1s;
+  }
+  .treningsBoks:hover {
+    box-shadow: 2px 2px 4px black;
   }
   .treningsBoksNavnContainer p {
     background-color: rgba(0, 0, 0, 0.8);
@@ -136,5 +170,69 @@
     padding: 1vh;
     margin-top: 70%;
     color: white;
+  }
+  .tilbake {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .tilbake i {
+    font-size: 5vh;
+    transition: 0.1s;
+  }
+  .tilbake i:hover {
+    font-size: 6vh;
+  }
+  #hvorforTrene {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+  #hvorforTrene h1 {
+    margin: 80px 100px;
+    line-height: 1.5em;
+      letter-spacing: 2px;
+  }
+  #hvorforTreneBilde {
+    background: url("https://images.hdqwalls.com/wallpapers/beautiful-morning-in-mountains-4k-pc.jpg")
+      center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+    filter: brightness(0.8);
+  }
+  #hvorforTreneTekst {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 450px;
+  }
+  #hvorforTreneTekst p{
+      margin: 100px 100px 20px 100px;
+      font-size: 3vh;
+      line-height: 1.5em;
+      letter-spacing: 2px;
+  }
+  #hvorforTreneTekst a{
+    font-size: 2vh;
+    color: rgb(99, 99, 99);
+    margin: 100px;
+    transition: 0.1s;
+  }
+  #hvorforTreneTekst a:hover{
+      color: black;
+  }
+
+  #bilde2{
+    background: url("https://images.hdqwalls.com/wallpapers/winter-snow-trees-mountains-landscape-hdr-4k-aj.jpg")
+      center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(0.8);
   }
 </style>
