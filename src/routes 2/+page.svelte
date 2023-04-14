@@ -104,12 +104,13 @@ width: 40%;
     
 }
 #omOssTittel{
+    
     font-family: arial black;
     display: flex;
     justify-content: center;
     font-size: 80px;
     font-weight: bolder;
-    color: rgb(194, 71, 62);
+    color: rgb(174, 255, 34);
     
 }
 #knapperContainer{
