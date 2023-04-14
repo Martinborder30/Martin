@@ -33,6 +33,11 @@
 				<td>4</td>
 				<td>10-12</td>
 			</tr>
+            <tr>
+                <td>Lat pull-down</td>
+                <td>3</td>
+                <td>5-10</td>
+            </tr>
 	</table>
 </body>
 
