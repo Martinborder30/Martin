@@ -5,14 +5,11 @@
 <body>
 <h1>Legs</h1>
 	<table>
-		<thead>
 			<tr>
 				<th>Treningsøvelse</th>
 				<th>Antall sett</th>
 				<th>Antall repetisjoner</th>
 			</tr>
-		</thead>
-		<tbody>
 			<tr>
 				<td>Calf Raises</td>
 				<td>3</td>
@@ -33,7 +30,6 @@
 				<td>3</td>
 				<td>30-60 sekunder</td>
 			</tr>
-		</tbody>
 	</table>
 </body>
 
@@ -43,7 +39,7 @@
     table{
         border-collapse: collapse;
     }
-    td{
+    td, th{
        border: 2px solid black; 
     }
     
