@@ -92,7 +92,7 @@ button {
 
 /* Bakgrunnsstil for hele siden */
 body {
-  background-image: url("https://media.tenor.com/xaRzVbbxLkcAAAAC/ronnie-coleman.gif"); /* Sett inn din egen bildeadresse her */
+  background-image: url("https://pbs.twimg.com/media/D84T4E7XsAAW11P.jpg"); /* Sett inn din egen bildeadresse her */
   background-size: cover;
   background-repeat: no-repeat;
 }
