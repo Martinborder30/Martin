@@ -42,8 +42,8 @@
     td, th{
        border: 2px solid black; 
     }
+
 	div{
 		margin: 100px;
 	}
-    
 </style>
