@@ -4,25 +4,22 @@
 //Lager et array og kaller det for personer
 //Lager 3 objerkt inni arrayet, og lager ulike verider på de ulike akitviteten
     let personer = [
-        {navn: "Første øvelse" ,høydehopp: 2, lengdehopp: 2, hundremeter: 10, totalscore: 10},
+        {navn: "Første øvelse" ,høydehopp: 2, lengdehopp: 2,},
        
     ] 
 //Lager funksjonen som sorterer arrayet etter totalscoren
 //Arrayet får personkopi som nytt navn hver gang det skjer en endring inne i arrayet, endringen blir lagret i en ny"variabel" array med navnetg personkopi.
 //Person.slice tar førse objekte i arrayen
 //Personkopi.sort samanlikner to verdier/inputs, og sender tilbake den som er størst
-$: personerkopi = personer.slice(0);
-$: er = personerkopi.sort(function(a,b) {
- return a.hundremeter - b.hundremeter;
- });
+
 
 </script>
-<!-- Each personer as person viser frem en og en verdi fra arrayet
+<body><!-- Each personer as person viser frem en og en verdi fra arrayet
 Binner inputfeltene til de ulike objektene-->
-<h1>Treningsøkt</h1>
+<h1>Lag eget trengisprogram</h1>
 <ul>
   {#each personer as person}
-    <li><Funksjon bind:person={person.navn} bind:høydehopp={person.høydehopp} bind:lengdehopp={person.lengdehopp} bind:hundremeter={person.hundremeter} bind:totalscore={person.totalscore}/></li>
+    <li><Funksjon bind:person={person.navn} bind:høydehopp={person.høydehopp} bind:lengdehopp={person.lengdehopp} /></li>
   {/each}
   <!-- Kanppen som legger til personer-->
   <button on:click={() => {
@@ -33,7 +30,75 @@ Legg til øvelse
 
 </ul>
 
-<div class="tilbake"><a href="/">Tilbake</a></div>
+
+<table>
+  <tr>
+      <th>Øvelse</th>
+      <th>Antall set</th>
+      <th>Antall repitisjoner</th>
+    
+  </tr> 
+  <!-- Lager ny each blokk slik at verdien blir vist en og en-->
+   {#each personer as deltaker}
+   <tr>
+    <td>{deltaker.navn}</td>
+    <td>{deltaker.høydehopp}</td>
+    
+    
+ </tr>
+
+{/each}
+</table>
+  
+</body>
+
+<style>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* Bakgrunnsstil for hele siden */
+body {
+  background-image: url("https://media.tenor.com/xaRzVbbxLkcAAAAC/ronnie-coleman.gif"); /* Sett inn din egen bildeadresse her */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+</style>
 
 
 
