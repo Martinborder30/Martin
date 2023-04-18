@@ -28,7 +28,7 @@
     {
       tittel: "Pull",
       src: "https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_658289782_1000x.jpg?v=1627573520",
-      link: "/Kristian/listeMedØkter/Pull",
+      link: "/Henrik",
     },
     {
       tittel: "Crossfit",
