@@ -1,7 +1,7 @@
 <script>
     import Tilbake from "../tilbake/tilbake.svelte"
 </script>
-
+<Tilbake/>
 <div>
 <h1>Legs</h1>
 	<table>
@@ -33,7 +33,6 @@
 	</table>
 </div>
 
-<Tilbake />
 
 <style>
     table{
@@ -42,8 +41,7 @@
     td, th{
        border: 2px solid black; 
     }
-
 	div{
-		margin: 100px;
+		padding-left: 100px;
 	}
 </style>
