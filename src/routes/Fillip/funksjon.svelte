@@ -45,7 +45,7 @@
    Rediger
        </button> Antall Set<input type="number" min=0 bind:value={høydehopp} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)} > </label>
        <label> Antall Reptisjoner<input type="number" min=0 bind:value={lengdehopp} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)}></label>
-       <label> Pause lengde<input type="number" min=0 bind:value={hundremeter} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)} > </label> 
+        
    
    </span>
    

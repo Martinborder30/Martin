@@ -43,7 +43,7 @@ Legg til øvelse
    <tr>
     <td>{deltaker.navn}</td>
     <td>{deltaker.høydehopp}</td>
-    <td>{deltaker.lengdehopp}</td>
+    
     
  </tr>
 
