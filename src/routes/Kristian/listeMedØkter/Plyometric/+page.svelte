@@ -6,7 +6,7 @@
 
 <body>
 
-<h1>Push Day</h1>
+<h1>Plyometrics</h1>
 	<table>
 			<tr>
 				<th>Treningsøvelse</th>
@@ -14,29 +14,24 @@
 				<th>Antall repetisjoner</th>
 			</tr>
 			<tr>
-				<td>Push-ups</td>
-				<td>3</td>
-				<td>10-15</td>
+				<td>Hope tau</td>
+				<td>2</td>
+				<td>1 min</td>
 			</tr>
 			<tr>
-				<td>Dips</td>
-				<td>3</td>
-				<td>10-15</td>
-			</tr>
-			<tr>
-				<td>Shoulder press</td>
-				<td>3</td>
-				<td>8-10</td>
-			</tr>
-			<tr>
-				<td>Benkpress</td>
+				<td>Depth jumps</td>
 				<td>4</td>
-				<td>5-8</td>
+				<td>10-15</td>
 			</tr>
 			<tr>
-				<td>Triceps push-down</td>
+				<td>Box jumps</td>
+				<td>4</td>
+				<td>10-15</td>
+			</tr>
+			<tr>
+				<td>Lateral hops</td>
 				<td>3</td>
-				<td>6-8</td>
+				<td>15-20</td>
 			</tr>
 	</table>
 </body>
