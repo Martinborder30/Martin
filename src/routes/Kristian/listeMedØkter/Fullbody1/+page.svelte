@@ -4,7 +4,7 @@
 
 </script>
 
-<body>
+<div>
 
 <h1>Full body workout</h1>
 	<table>
@@ -39,7 +39,7 @@
 				<td>30-60 sekunder</td>
 			</tr>
 	</table>
-</body>
+</div>
 
 <Tilbake/>
 

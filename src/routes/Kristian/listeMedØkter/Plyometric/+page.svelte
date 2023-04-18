@@ -4,7 +4,7 @@
 
 </script>
 
-<body>
+<div>
 
 <h1>Plyometrics</h1>
 	<table>
@@ -34,7 +34,7 @@
 				<td>15-20</td>
 			</tr>
 	</table>
-</body>
+</div>
 
 <Tilbake/>
 

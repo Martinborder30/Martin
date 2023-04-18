@@ -3,8 +3,8 @@
 
 
 </script>
-
-<body>
+<Tilbake/>
+<div>
 
 <h1>Push Day</h1>
 	<table>
@@ -44,9 +44,9 @@
                 <td></td>
             </tr>
 	</table>
-</body>
+</div>
 
-<Tilbake/>
+
 
 <style>
     table{

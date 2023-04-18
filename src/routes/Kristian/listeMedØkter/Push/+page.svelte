@@ -4,7 +4,7 @@
 
 </script>
 
-<body>
+<div>
 
 <h1>Push Day</h1>
 	<table>
@@ -39,7 +39,7 @@
 				<td>6-8</td>
 			</tr>
 	</table>
-</body>
+</div>
 
 <Tilbake/>
 

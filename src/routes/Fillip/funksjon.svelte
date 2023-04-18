@@ -3,7 +3,7 @@
     export let høydehopp = 0
     export let lengdehopp = 0
     export let hundremeter = 0
-    export let totalscore = høydehopp*5+lengdehopp*5-hundremeter
+    
    export let endreNavn = false
    export let endringsforslag = ""
    
@@ -16,7 +16,7 @@
            høydehopp=Math.abs(høydehopp)
            lengdehopp=Math.abs(lengdehopp)
            hundremeter=Math.abs(hundremeter)
-           totalscore = høydehopp*5+lengdehopp*5-hundremeter
+          
        } 
    </script>
    <!-- Funkjsonen som legger til ny elev
@@ -45,8 +45,31 @@
    Rediger
        </button> Antall Set<input type="number" min=0 bind:value={høydehopp} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)} > </label>
        <label> Antall Reptisjoner<input type="number" min=0 bind:value={lengdehopp} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)}></label>
-       <label> Pause lengde<input type="number" min=0 bind:value={hundremeter} on:change={totalpoeng(høydehopp, lengdehopp, hundremeter)} > </label> 
+        
    
    </span>
    
    {/if} 
+   
+   <style>
+       button {
+     background-color: #4CAF50;
+     color: white;
+     font-size: 16px;
+     padding: 8px 16px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+   }
+   
+   
+   
+   /* Stil for input-feltene */
+   input[type="number"] {
+     width: 60px;
+     font-size: 18px;
+     padding: 5px 10px;
+     border: 2px solid #ccc;
+     border-radius: 5px;
+   }
+   </style>

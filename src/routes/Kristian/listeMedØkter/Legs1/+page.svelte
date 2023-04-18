@@ -1,8 +1,8 @@
 <script>
     import Tilbake from "../tilbake/tilbake.svelte"
 </script>
-
-<body>
+<Tilbake/>
+<div>
 <h1>Legs</h1>
 	<table>
 			<tr>
@@ -31,9 +31,8 @@
 				<td>30-60 sekunder</td>
 			</tr>
 	</table>
-</body>
+</div>
 
-<Tilbake />
 
 <style>
     table{
@@ -42,5 +41,7 @@
     td, th{
        border: 2px solid black; 
     }
-    
+	div{
+		padding-left: 100px;
+	}
 </style>
