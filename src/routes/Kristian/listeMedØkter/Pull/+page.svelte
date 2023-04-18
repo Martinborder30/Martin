@@ -7,7 +7,7 @@
 <body>
 
 <h1>Pull Day</h1>
-	<table>
+	<div>
 			<tr>
 				<th>Treningsøvelse</th>
 				<th>Antall sett</th>
@@ -39,7 +39,7 @@
                 <td>5-10</td>
             </tr>
 	</table>
-</body>
+</div>
 
 <Tilbake/>
 

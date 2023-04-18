@@ -2,7 +2,7 @@
     import Tilbake from "../tilbake/tilbake.svelte"
 </script>
 
-<body>
+<div>
 <h1>Legs</h1>
 	<table>
 			<tr>
@@ -31,7 +31,7 @@
 				<td>30-60 sekunder</td>
 			</tr>
 	</table>
-</body>
+</div>
 
 <Tilbake />
 

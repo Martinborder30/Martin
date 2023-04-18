@@ -4,7 +4,7 @@
 
 </script>
 
-<body>
+<div>
 
 <h1>Chest</h1>
 	<table>
@@ -39,7 +39,7 @@
 				<td>MAX</td>
 			</tr>
 	</table>
-</body>
+</div>
 
 <Tilbake/>
 
