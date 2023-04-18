@@ -1,5 +1,8 @@
-<a href="/Kristian/listeMedØkter"><div class="tilbake"><p>hei</p></div></a>
-
+<a href="/Kristian/listeMedØkter"><div class="tilbake"><i class="fa fa-backward"/></div></a>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 <style>
     .tilbake {
     position: absolute;
@@ -8,13 +11,13 @@
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
-    color: red;
+    color: black;
   }
-  .tilbake p {
+  .tilbake i {
     font-size: 5vh;
     transition: 0.1s;
   }
-  .tilbake p:hover {
+  .tilbake i:hover {
     font-size: 6vh;
   }
 </style>

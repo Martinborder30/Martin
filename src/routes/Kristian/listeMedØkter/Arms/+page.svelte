@@ -3,7 +3,7 @@
 
 
 </script>
-
+<Tilbake/>
 <div>
 
 <h1>Push Day</h1>
@@ -46,7 +46,7 @@
 	</table>
 </div>
 
-<Tilbake/>
+
 
 <style>
     table{
