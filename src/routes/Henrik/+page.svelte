@@ -1,5 +1,7 @@
 <script>
-let ikkeInnlogget = true
+	import Tilbake from "../Kristian/listeMedØkter/tilbake/tilbake.svelte"
+	let visKlokke = false
+	let ikkeInnlogget = true
        let innlogget = false
        let innlogget2 = false
        let ferdig = false
@@ -7,9 +9,11 @@ let ikkeInnlogget = true
        let innlogget3 = false
        let innlogget4 = false
        let innlogget5 = false
+
       const side0 =() => {
          ikkeInnlogget =true
          innlogget = false
+		 visKlokke =false
       }   
    
        const side1 = () => {
@@ -19,6 +23,7 @@ let ikkeInnlogget = true
          innlogget3= false
           innlogget4 = false
           innlogget5 = false
+		  visKlokke = true
        }
        const side2 = () => {
           innlogget2 = true
@@ -84,8 +89,45 @@ let ikkeInnlogget = true
     <div class="venstre">
           <div class="litenVenstre">
 			{#if ikkeInnlogget}
-   
-			<button on:click={side1}> Start økt</button>
+			<div>
+
+				<h1>Full body workout</h1>
+					<table>
+							<tr>
+								<th>Treningsøvelse</th>
+								<th>Antall sett</th>
+								<th>Antall repetisjoner</th>
+							</tr>
+							<tr>
+								<td>Push-ups</td>
+								<td>3</td>
+								<td>10-15</td>
+							</tr>
+							<tr>
+								<td>Squats</td>
+								<td>3</td>
+								<td>10-15</td>
+							</tr>
+							<tr>
+								<td>Lunges</td>
+								<td>3</td>
+								<td>10-15 (på hver side)</td>
+							</tr>
+							<tr>
+								<td>Sit-ups</td>
+								<td>3</td>
+								<td>15-20</td>
+							</tr>
+							<tr>
+								<td>Plank</td>
+								<td>3</td>
+								<td>30-60 sekunder</td>
+							</tr>
+					</table>
+				</div>
+				
+				<Tilbake/>
+			<button on:click={side1} id="startKnapp"> Start økt</button>
 		   
 		{/if}
 		 {#if innlogget}
@@ -145,6 +187,13 @@ let ikkeInnlogget = true
 </div>
 
 <style>
+	   table{
+        border-collapse: collapse;
+    }
+    td, th{
+       border: 2px solid black; 
+    }
+    
   button {
     background-color: #007bff;
     color: white;
@@ -158,6 +207,7 @@ let ikkeInnlogget = true
 #startKnapp{
       position: absolute;
       right: 50%;
+	  top: 50%
 }
   h1 {
     font-size: 24px;
