@@ -18,7 +18,7 @@
     {
       tittel: "Chest",
       src: "https://static.wixstatic.com/media/ea496f_52e334c40a99457b895b93060409d0cd~mv2.jpg/v1/fill/w_640,h_392,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ea496f_52e334c40a99457b895b93060409d0cd~mv2.jpg",
-      link: "/Kristian/listeMedØkter/",
+      link: "/Kristian/listeMedØkter/chest",
     },
     {
       tittel: "Push",
