@@ -37,7 +37,7 @@
     },
     {
       tittel: "Plyometric",
-      src: "/src/routes/Kristian/listeMedØkter/Bilde/august.png",
+      src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gq.co.za%2Fculture%2Ffitness%2Fplyometrics-what-is-plyometric-training-and-how-does-it-benefit-the-body-66117a00-8d67-43f1-97b0-1b936cda837f&psig=AOvVaw1ZAZv1E9ZuCeMGzkO8IH8x&ust=1682160266172000&source=images&cd=vfe&ved=0CBEQjRxqGAoTCMCK0b7luv4CFQAAAAAdAAAAABCuAQ",
       link: "/Kristian/listeMedØkter/Plyometric",
     },
   ];
