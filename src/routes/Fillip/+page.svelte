@@ -258,6 +258,16 @@ body {
   background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg"); /* Sett inn din egen bildeadresse her */
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
 }
 
 
@@ -279,9 +289,7 @@ body {
     cursor: pointer;
   }
 #startKnapp{
-      position: absolute;
-      right: 50%;
-	  top: 50%
+      
 }
   h1 {
     font-size: 24px;
@@ -293,21 +301,7 @@ body {
     margin-bottom: 5px;
   }
 
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+   
 
   button:nth-of-type(1) {
     background-color: white;
