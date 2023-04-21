@@ -16,7 +16,7 @@
 </script>
 <body><!-- Each personer as person viser frem en og en verdi fra arrayet
 Binner inputfeltene til de ulike objektene-->
-<h1>Lag eget trengisprogram</h1>
+<h1>Lag eget treningsprogram</h1>
 <ul>
   {#each personer as person}
     <li><Funksjon bind:person={person.navn} bind:høydehopp={person.høydehopp} bind:lengdehopp={person.lengdehopp} /></li>
