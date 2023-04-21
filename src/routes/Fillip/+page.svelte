@@ -255,8 +255,9 @@ button {
 
 /* Bakgrunnsstil for hele siden */
 body {
-  background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg"); /* Sett inn din egen bildeadresse her */
-  background-size: cover;
+  background-image: linear-gradient(red, yellow);
+
+   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
     text-align: center;
@@ -314,11 +315,9 @@ body {
     width: 100%;
   }
   .venstre {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 30vh;
-
   }
   .litenVenstre{
         display: flex;
