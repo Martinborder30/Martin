@@ -37,7 +37,7 @@
     },
     {
       tittel: "Plyometric",
-      src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gq.co.za%2Fculture%2Ffitness%2Fplyometrics-what-is-plyometric-training-and-how-does-it-benefit-the-body-66117a00-8d67-43f1-97b0-1b936cda837f&psig=AOvVaw1ZAZv1E9ZuCeMGzkO8IH8x&ust=1682160266172000&source=images&cd=vfe&ved=0CBEQjRxqGAoTCMCK0b7luv4CFQAAAAAdAAAAABCuAQ",
+      src: "https://image-prod.iol.co.za/resize/640x64000/Image-Instagram-freeletics?source=https://xlibris.public.prod.oc.inl.infomaker.io:8443/opencontent/objects/a19395d3-492a-5f65-a717-e191bc3f9e74&operation=CROP&offset=0x0&resize=1080x1350&webp=true",
       link: "/Kristian/listeMedØkter/Plyometric",
     },
   ];
