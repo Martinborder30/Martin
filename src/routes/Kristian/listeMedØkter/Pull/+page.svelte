@@ -8,6 +8,7 @@
 
 <h1>Pull Day</h1>
 	<div>
+		<table>
 			<tr>
 				<th>Treningsøvelse</th>
 				<th>Antall sett</th>
@@ -42,7 +43,7 @@
 </div>
 
 <Tilbake/>
-
+</body>
 <style>
     table{
         border-collapse: collapse;

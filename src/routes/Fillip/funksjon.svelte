@@ -32,7 +32,7 @@
    lagre
    <!-- Npr man trykk på avbryt, forsvinner det også for endrenavn=false-->
    </button>
-   <button on:click={() => (endreNavn = false)}> Avbryt</button>
+   <button style="background-color: red;" on:click={() => (endreNavn = false)}> Avbryt</button>
    
    <!-- Npr endre navn =true kjem input felte opp-->
    {:else}

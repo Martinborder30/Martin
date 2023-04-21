@@ -53,8 +53,11 @@ Legg til øvelse
 </body>
 
 <style>
-
+h1{
+  color: white;
+}
 table {
+  color: white;
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 20px;
@@ -92,7 +95,7 @@ button {
 
 /* Bakgrunnsstil for hele siden */
 body {
-  background-image: url("https://pbs.twimg.com/media/D84T4E7XsAAW11P.jpg"); /* Sett inn din egen bildeadresse her */
+  background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg"); /* Sett inn din egen bildeadresse her */
   background-size: cover;
   background-repeat: no-repeat;
 }
